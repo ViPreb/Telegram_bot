@@ -41,11 +41,9 @@ async def all_bot(message: types.Message):
     else:
         await bot.send_message(message.chat.id, f"Первый ходит бот")
 
-# @dp.message_handler()
-# async def game_bot(message: types.Message):
     counter1 = 0
     counter2 = 0
-    # global flag
+
     while total > 28:
         if flag:
             await bot.send_message(message.from_user.id, f"Введи корректное количество конфет от 1 до 28")

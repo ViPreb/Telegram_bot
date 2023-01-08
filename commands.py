@@ -7,14 +7,7 @@ total = 150
 # flag = 0  # флаг очередности
 
 from random import randint
-# from Keyboards.Standart import main_keyboard
 
-# @dp.message_handler(commands=['start', 'help'])
-# async def send_welcome(message: types.Message):
-#     """
-#     This handler will be called when user sends `/start` or `/help` command
-#     """
-#     await message.reply("Hi!\nI'm EchoBot!\nPowered by aiogram.")
 @dp.message_handler(commands=['start'])
 async def start_bot(message: types.Message):
     # print(message)
